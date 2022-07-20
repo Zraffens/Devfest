@@ -20,7 +20,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+$primary-color: #69be86;
+$bg-color: #fcfcfc;
+nav {
+  background: white;
+}
+
 .view-enter-active,
 .view-leave-active {
   transition: opacity 0.5s ease;
