@@ -4,11 +4,7 @@
     :class="[open ? '' : 'shadow']"
   >
     <div class="brand px-12 flex items-center cursor-pointer font-semibold">
-      <span class="text-green-500 text-xl mr-1">
-        <i class="bi bi-messenger"></i>
-      </span>
-      <span class="text-xl">L</span>
-      <h1 class="text-xl text-green-500">Earn</h1>
+      <img src="../assets/images/logo.png" id="brand-img" alt="" srcset="" />
     </div>
 
     <span
@@ -43,10 +39,10 @@ export default {
     return {
       open: false,
       links: [
-        { name: "Home", link: "#" },
-        { name: "About" },
-        { name: "Blog", link: "#" },
-        { name: "Contact", link: "#" },
+        { name: "Home", link: "/" },
+        { name: "About", link: "/about" },
+        { name: "Jobs", link: "#jobs" },
+        { name: "Contact", link: "/contact" },
       ],
     };
   },
@@ -71,6 +67,8 @@ $bg-color: #fcfcfc;
   color: $primary-color;
 }
 
-.brand {
+#brand-img {
+  width: 80px;
+  height: 50px;
 }
 </style>

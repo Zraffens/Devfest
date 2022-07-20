@@ -1,11 +1,10 @@
 <template>
   <div class="search-bar">
-    <form action="" @submit="submit($event)">
+    <form action="">
       <input
-        v-model="keyword"
         type="text"
-        class="search-field p-3 m-3 font-lg"
-        placeholder="Jobs or Skills"
+        class="container text-left -ml-1 mt-8 w-3/4 h-12 bg-gray-100 border-2 border-green-500 rounded-xl pl-4"
+        placeholder="Content Writer"
       />
     </form>
   </div>

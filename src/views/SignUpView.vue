@@ -1,9 +1,9 @@
 <template>
   <div>
   <div class="w-full h-screen flex items-center justify-center ">
-  <form class="w-full md:w-1/3 rounded-lg">
+  <form class="w-full md:w-1/3 rounded-lg mt-5">
 	<div class="flex font-bold justify-center mt-6">
-	  <img class="h-20 w-20 mb-3" src="https://dummyimage.com/64x64" />
+	  <img class="h-20 w-20 mb-3" src="../assets/images/logo.png" />
 	</div>
 	<h2 class="text-2xl text-center text-gray-500 mb-8">Register</h2>
 	<div class="px-12 pb-10">
