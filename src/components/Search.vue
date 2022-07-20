@@ -1,7 +1,8 @@
 <template>
   <div class="search-bar">
-    <form action="">
+    <form action="" @submit="submit($event)">
       <input
+        v-model="keyword"
         type="text"
         class="search-field p-3 m-3 font-lg"
         placeholder="Jobs or Skills"
@@ -13,6 +14,24 @@
 <script>
 export default {
   name: "Search",
+  data() {
+    return {
+      keyword: "",
+    };
+  },
+  methods: {
+    submit(e) {
+      e.preventDefault();
+      this.$route.push({
+        name: "create",
+        params: {
+          data: {
+            keyword: keyword,
+          },
+        },
+      });
+    },
+  },
 };
 </script>
 

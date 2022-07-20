@@ -22,24 +22,61 @@
         </div>
       </div>
     </div>
+    <JobListing :jobs="jobs" />
   </div>
 </template>
 
 <script>
 import Search from "@/components/Search.vue";
+import JobListing from "@/components/JobListing.vue";
 
 export default {
   name: "HomeView",
   components: {
     Search,
+    JobListing,
+  },
+  data() {
+    return {
+      jobs: [
+        {
+          id: 1,
+          title: "Teacher",
+          tag: "Education",
+        },
+
+        {
+          id: 2,
+          title: "Software Developer",
+          tag: "Tech",
+        },
+        {
+          id: 3,
+          title: "Writer",
+          tag: "Content",
+        },
+        {
+          id: 4,
+          title: "Assistant",
+          tag: "Helper",
+        },
+        {
+          id: 5,
+          title: "Transcripts",
+          tag: "Content",
+        },
+        {
+          id: 6,
+          title: "Mental Health Counselor",
+          tag: "Psychology",
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style>
-.home {
-}
-
 .heading-text {
   font-size: 4.8rem;
   font-weight: 700;
