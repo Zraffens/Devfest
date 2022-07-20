@@ -42,7 +42,7 @@ export default {
         { name: "Home", link: "/" },
         { name: "About", link: "/about" },
         { name: "Jobs", link: "#jobs" },
-        { name: "Contact", link: "/contact" },
+        { name: "Contact", link: "mailto:info@learn.com" },
       ],
     };
   },
