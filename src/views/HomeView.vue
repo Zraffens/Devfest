@@ -40,18 +40,23 @@
     <div id="jobs">
       <JobListing :jobs="jobs" />
     </div>
+    <div id="learning">
+      <Learning :skills="skills" />
+    </div>
   </div>
 </template>
 
 <script>
 import Search from "@/components/Search.vue";
 import JobListing from "@/components/JobListing.vue";
+import Learning from "@/components/Learning.vue";
 
 export default {
   name: "HomeView",
   components: {
     Search,
     JobListing,
+    Learning,
   },
   data() {
     return {
@@ -94,6 +99,25 @@ export default {
           img: "counselor", 
         },
       ],
+      skills: [
+        {
+          id: 1,
+          title: 'Programming'
+        },
+        {
+          id: 2,
+          title: 'Media Developer'
+        },
+        {
+          id: 3,
+          title: 'Business'
+        },
+        {
+          id: 4,
+          title: 'Taxi Driving'
+        },
+
+      ]
     };
   },
 };

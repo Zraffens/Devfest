@@ -49,7 +49,7 @@
                 <div class="p-4">
                   <span
                     class="inline-block px-2 py-1 leading-none bg-green-300 text-white rounded-full font-semibold uppercase tracking-wide text-xs"
-                    >Lunch</span
+                    >Job</span
                   >
                   <h2 class="mt-2 mb-2 font-bold">{{ job.title }}</h2>
                 </div>
